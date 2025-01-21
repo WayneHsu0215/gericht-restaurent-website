@@ -29,7 +29,7 @@ const Navbar = () => {
                     alt="app logo"
                     className="h-auto w-24 sm:w-20 2xl:w-52"/>
             </div>
-            <ul className='lg:flex hidden justify-center items-center flex-1 duration-300 gap-2'>
+            <ul className='lg:flex hidden justify-center items-center flex-1 duration-300 mr-28 gap-2'>
                 <li
                     className='text-primary-white my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
                     <a href='#home'>首頁</a>
