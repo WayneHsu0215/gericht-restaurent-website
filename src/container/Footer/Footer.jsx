@@ -12,9 +12,12 @@ const Footer = () => (
 
     <div className="app__footer-links w-full flex items-start flex-col justify-between lg:flex-row mt-20 py-0 px-8">
       <div className="app__footer-links_contact flex-one my-8 mx-0 xl:m-4 text-left lg:text-center">
-        <h1 className="app__footer-headtext font-CormorantUpright text-primary-white font-normal leading-10 tracking-wider capitalize text-size-3xl mb-4 big:text-[51px]">Contact Us</h1>
+        <h1 className="app__footer-headtext font-KaiTi text-primary-white font-normal leading-10 tracking-wider capitalize text-size-3xl mb-4 font-black big:text-[51px]">聯絡我們</h1>
         <p className="text-white font-KaiTi">地址：638雲林縣麥寮鄉仁德西路一段25號</p>
         <p className="text-white font-KaiTi">電話號碼：0965 515 150</p>
+        <a href="https://shop.ichefpos.com/store/6koqeTEY/ordering" target="_blank" rel="noopener noreferrer">
+          <button type="button" className="custom__button mt-4">點餐連結</button>
+        </a>
       </div>
 
       <div className="app__footer-links_logo flex-one my-8 mx-0 xl:m-4 text-left lg:text-center">
@@ -34,8 +37,8 @@ const Footer = () => (
       </div>
 
       <div className="app__footer-links_work flex-one my-8 mx-0 xl:m-4 text-left lg:text-center">
-        <h1 className="app__footer-headtext font-CormorantUpright text-primary-white font-normal leading-10 tracking-wider capitalize text-size-3xl mb-4 big:text-[51px]">Working
-          Hours</h1>
+
+        <h1 className="app__footer-headtext font-KaiTi text-primary-white font-normal leading-10 tracking-wider capitalize text-size-3xl mb-4 big:text-[51px] font-black">開店時間</h1>
         <p className="text-white font-KaiTi">星期二-星期日</p>
         <p className="p__opensans">11:00 am - 14:00 pm</p>
         <p className="p__opensans">16:00 pm - 21:00 pm</p>

@@ -52,9 +52,9 @@ const Navbar = () => {
 
             <div className="sm:flex hidden justify-end items-center">
 
-                <a
-                    href="https://shop.ichefpos.com/store/6koqeTEY/ordering" target="_blank" rel="noopener noreferrer"
-                    className='text-white text-xl  font-KaiTi my-0 mx-1 underline no-underline duration-150 hover:text-primary-gray'>點餐連結</a>
+                <a href="https://shop.ichefpos.com/store/6koqeTEY/ordering" target="_blank" rel="noopener noreferrer">
+                    <button type="button" className="custom__button">點餐連結</button>
+                </a>
             </div>
 
             {/*================ Mobile Navigation ================*/}
