@@ -163,29 +163,44 @@ const MenuPage = () => {
   ];
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", lineHeight: "1.6", backgroundColor: "#0a0a0a", paddingBottom: "50px" }}>
-      <nav style={{ backgroundColor: "#0a0a0a", padding: "10px 0", position: "fixed", top: 0, width: "100%", zIndex: 1000, borderBottom: "none" }}>
-        {menuSections.map((section) => (
-          <button
-            key={section.id}
-            style={{
-              backgroundColor: "#f3c15c", // Soft yellow shade
-              border: "none",
-              color: "white",
-              padding: "10px 20px",
-              margin: "0 5px",
-              cursor: "pointer",
-              borderRadius: "5px",
-            }}
-            onClick={() => {
-              document.getElementById(section.id).scrollIntoView({ behavior: "smooth" });
-            }}
-          >
-            {section.title}
-          </button>
-        ))}
-      </nav>
-
+    <div style={{ fontFamily: "Arial, sans-serif", lineHeight: "3", backgroundColor: "#0a0a0a", paddingBottom: "50px" }}>
+    <nav
+      style={{
+        backgroundColor: "#0a0a0a",
+        padding: "10px 0",
+        position: "fixed",
+        top: 0,
+        width: "100%",
+        zIndex: 1000,
+        outline: "none",
+      }}
+    >
+      {menuSections.map((section) => (
+        <span
+          key={section.id}
+          onClick={() => {
+            document.getElementById(section.id).scrollIntoView({ behavior: "smooth" });
+          }}
+          style={{
+            color: "#fde68a", // 淡黄色的文字颜色
+            padding: "10px 20px",
+            margin: "0 5px",
+            cursor: "pointer", // 让鼠标指针变成手形
+            fontSize: "1.1em", // 可以根据需要调整字体大小
+            fontWeight: "bold", // 加粗
+            transition: "color 0.3s ease", // 添加颜色变化过渡效果
+          }}
+          onMouseEnter={(e) => {
+            e.target.style.color = "#f59e0b"; // 悬停时颜色变深
+          }}
+          onMouseLeave={(e) => {
+            e.target.style.color = "#fde68a"; // 悬停结束时恢复原色
+          }}
+        >
+          {section.title}
+        </span>
+      ))}
+    </nav>
       <div style={{ paddingTop: "60px" }}>
         {menuSections.map((section) => (
           <div
@@ -200,7 +215,7 @@ const MenuPage = () => {
               boxShadow: "0 4px 8px rgba(255, 255, 255, 0.1)",
             }}
           >
-            <h2 style={{ borderBottom: "2px solid rgb(243, 193, 92)", paddingBottom: "10px", color: "#fde68a", fontSize: "1.3em" }}>
+            <h2 style={{ borderBottom: "2px solid rgb(243, 193, 92)", paddingBottom: "10px", color: "#f59e0b", fontSize: "1.8em", fontWeight: "bold" }}>
               {section.title}
             </h2>
             {section.items.map((item, index) => (
@@ -213,7 +228,7 @@ const MenuPage = () => {
                   padding: "10px 0",
                 }}
               >
-                <span style={{ color: "#fef3c7" }}>{item.name}</span>
+                <span style={{ color: "rgb(232, 220, 198)", fontSize: "1.1em" }}>{item.name}</span>
                 <div style={{ display: "flex", justifyContent: "left", alignItems: "center", flex: 1 }}>
                   {item.note && (
                     <span
@@ -221,7 +236,7 @@ const MenuPage = () => {
                         fontStyle: "italic",
                         color: "white", 
                         textAlign: "center",
-                        marginLeft: "16px",
+                        marginLeft: "32px",
                         fontSize: "0.8em",
                       }}
                     >
