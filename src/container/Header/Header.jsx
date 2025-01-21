@@ -28,13 +28,9 @@ const Header = () => {
             id="home"
         >
             <div className="flex-1 w-full flex items-start justify-center flex-col animate-slideInFromLeft">
-                <SubHeading title="Chase the new flavour" />
-                <h1
-                    className={`headtext__cormorant font-bold mb-4 whitespace-nowrap overflow-hidden border-r-4 border-primary-golden`}
-                    style={{ width: `${text.length}ch` }}
-                >
-                    {text}
-                </h1>
+                <SubHeading title="Chase the new flavour"/>
+                <h1 className="headtext__cormorant font-bold mb-4">{text}</h1>
+
                 <p className="p__opensans mb-4 animate-fadeIn delay-500">
                     Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
                     morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
@@ -49,7 +45,7 @@ const Header = () => {
             </div>
 
             <div className="app__wrapper_img animate-slideInFromRight delay-1000">
-                <img src={images.welcome} alt="header_img" />
+            <img src={images.welcome} alt="header_img" />
             </div>
         </div>
     );
