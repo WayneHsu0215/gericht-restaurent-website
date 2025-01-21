@@ -18,21 +18,30 @@ const Gallery = () => {
     }
   };
 
+  const instagramLinks = [
+    "https://www.instagram.com/p/Cm0669nSo7O/?img_index=2&igsh=Zmk0dXlzZ3BnMHcz", 
+    "https://www.instagram.com/p/CggZZ6lP05n/?img_index=1&igsh=MThtY2o4M2ZmZnNyaA==",
+    "https://www.instagram.com/p/Cf8NEyTFXo6/?igsh=cW9yY3FhaHluNXU1",
+    "https://www.instagram.com/p/CaTknSCFkvg/?igsh=MXY4Z3VhN2syMHNweQ==",
+  ];
+
   return (
     <div className="app__gallery flex__center flex-col bg-primary-black py-16 px-8 xl:px-24 xl:flex-row">
       <div className="app__gallery-content flex-one flex justify-center items-center flex-col min-w-[100%] xl:pr-8 sm:min-w-[500px] ">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">Photo Gallery</h1>
-        <p className="p__opensans mt-8 text-center" style={{ color: '#AAAAAA'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
+        <h1 className="headtext__cormorant">美食特集</h1>
+        <p className="p__opensans mt-8 text-center" style={{ color: '#AAAAAA'}}>這裡有更多美食等著你們來探索</p>
         <button type="button" className="custom__button my-10 xl:mt-8">了解更多</button>
       </div>
       <div className="app__gallery-images flex-one flex flex-row max-w-[90%] relative xl:max-w-[50%]">
         <div className="app__gallery-images_container flex flex-row w-max overflow-x-scroll" ref={scrollRef}>
 
-          {[images.gallery01, images.gallery02, images.gallery03, images.gallery04].map((image, index) => (
-            <div className="app__gallery-images_card relative min-w-[240px] h-[320px] mr-8 flex__center sm:min-w-[301px] sm:h-[447px] " key={`gallery_image-${index + 1}`}>
-              <img src={image} alt="gallery_image" className='w-full h-full object-cover opacity-100 duration-500 ease-in-out'/>
-              <BsInstagram className="gallery__image-icon absolute text-primary-white text-size-4xl opacity-0 duration-500 ease-in-out cursor-pointer" />
+          {[images.food01, images.food02, images.food03, images.food04].map((image, index) => (
+            <div className="app__gallery-images_card relative min-w-[240px] h-[320px] mr-8 flex__center sm:min-w-[301px] sm:h-[447px]" key={`gallery_image-${index + 1}`}>
+              <img src={image} alt="gallery_image" className="w-full h-full object-cover opacity-100 duration-500 ease-in-out" />
+              <a href={instagramLinks[index]} target="_blank" rel="noopener noreferrer">
+                <BsInstagram className="gallery__image-icon absolute text-primary-white text-size-3xl opacity-0 duration-500 ease-in-out cursor-pointer hover:opacity-100 top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" />
+              </a>
             </div>
           ))}
 

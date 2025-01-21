@@ -7,15 +7,19 @@ const FindUs = () => (
   <div className="app__bg app__wrapper section__padding" id="contact">
     <div className="app__wrapper_info">
       <SubHeading title="Contact" />
-      <h1 className="headtext__cormorant" style={{ marginBottom: '3rem' }}>Find Us</h1>
+      <h1 className="headtext__cormorant font-KaiTi" style={{ marginBottom: '3rem' }}>地址</h1>
       <div className="app__wrapper-content">
-        <p className="p__opensans">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 75G</p>
-        <p className="p__cormorant" style={{ color: '#DCCA87', margin: '2rem 0' }}>Opening Hours</p>
-        <p className="p__opensans">Mon - Fri: 10:00 am - 02:00 am</p>
-        <p className="p__opensans">Sat - Sun: 10:00 am - 03:00 am</p>
+        <p className="p__opensans font-KaiTi">638雲林縣麥寮鄉仁德西路一段25號</p>
+        <p className="p__cormorant font-KaiTi" style={{ color: '#DCCA87', margin: '2rem 0' }}>開店時間</p>
+        <p className="text-white font-KaiTi">星期二-星期日</p>
+        <p className="p__opensans">11:00 am - 14:00 pm</p>
+        <p className="p__opensans">16:00 pm - 21:00 pm</p>
       </div>
-      <button type="button" className="custom__button mt-8">Visit Us</button>
+      <a href="https://www.google.com/maps?ll=23.797047,120.265044&z=16&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=634957201960939680" target="_blank" rel="noopener noreferrer">
+      <button type="button" className="custom__button mt-8 font-KaiTi">打開地圖</button>
+      </a>
     </div>
+    
 
 
       <div className="app__wrapper_img">
