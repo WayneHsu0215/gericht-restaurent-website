@@ -1,57 +1,62 @@
 import images from './images';
 
-const food = [
+const soup = [
   {
-    title: 'Burger Meal',
-    price: '$56',
+    title: '三鮮豚骨',
+    price: '$30',
     tags: 'AU | Meal',
   },
   {
-    title: '3x Pizza Deal',
-    price: '$59',
+    title: '牛奶起司',
+    price: '$45',
     tags: 'AU | Deal',
   },
   {
-    title: 'Kebab Meal',
-    price: '$44',
+    title: '半斤蛤蠣',
+    price: '$60',
     tags: 'FR | Deal',
   },
   {
-    title: 'Shawarma',
-    price: '$31',
+    title: '酸菜魚',
+    price: '$50',
     tags: 'CA | Meal',
   },
   {
-    title: 'Donner Roll',
-    price: '$26',
+    title: '泰式冬蔭功',
+    price: '$50',
     tags: 'IE | Meal',
   },
 ];
 
-const drinks = [
+const hotpot = [
   {
-    title: 'Coca Cola',
-    price: '$20',
+    title: '五花牛肉鍋',
+    price: '$190',
     tags: 'Free with a meal | Soda | 30 ml',
   },
   {
-    title: "Pepsi",
-    price: '$16',
+    title: "拾吾雞肉鍋",
+    price: '$210',
     tags: 'Free with a meal | Soda | 30 ml',
   },
   {
-    title: 'Water',
-    price: '$10',
+    title: '拾吾鯛魚鍋',
+    price: '$200',
     tags: 'Free with a meal | 30 ml',
   },
   {
-    title: 'Water',
-    price: '$31',
+    title: '深海草蝦鍋',
+    price: '$230',
     tags: 'Free with a meal | 30 ml',
   },
   {
-    title: 'Rio',
-    price: '$26',
+    title: '肉肉雙拼\n（4選2）',
+    price: '$220',
+    tags: 'Free with a meal | Soda | 30 ml',
+  },
+  {
+    title: '海陸雙拼\n（6選2）',
+    price: '$250',
     tags: 'Free with a meal | Soda | 30 ml',
   },
 ];
@@ -79,4 +84,4 @@ const awards = [
   },
 ];
 
-export default { food, drinks, awards };
+export default { soup, hotpot, awards };

@@ -5,8 +5,7 @@ import './Header.css';
 
 const Header = () => {
     const [text, setText] = useState('');
-    const fullText = 'The Key To Fine Dining';
-
+    const fullText = '食我鍋物\n    拾你初心'; // 在 '拾你初心' 前添加空格
 
     useEffect(() => {
         let currentIndex = 0;
@@ -28,24 +27,28 @@ const Header = () => {
             id="home"
         >
             <div className="flex-1 w-full flex items-start justify-center flex-col animate-slideInFromLeft">
-                <SubHeading title="Chase the new flavour"/>
-                <h1 className="headtext__cormorant font-bold mb-4">{text}</h1>
-
+                <SubHeading title="Chase the new flavour" />
+                {/* 使用 CSS 来处理换行 */}
+                <h1 className="headtext__cormorant font-bold mb-4 text-with-linebreak font-KaiTi">
+                    {text}
+                </h1>
                 <p className="p__opensans mb-4 animate-fadeIn delay-500">
                     Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
                     morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
                     tellus.
                 </p>
+                <a href="#menu">
                 <button
                     type="button"
                     className="custom__button animate-fadeIn delay-700"
                 >
-                    Explore Menu
+                    探索菜單
                 </button>
+                </a>
             </div>
 
             <div className="app__wrapper_img animate-slideInFromRight delay-1000">
-            <img src={images.welcome} alt="header_img" />
+                <img src={images.home} alt="header_img" />
             </div>
         </div>
     );

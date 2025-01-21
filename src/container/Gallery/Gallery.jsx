@@ -24,7 +24,7 @@ const Gallery = () => {
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant">Photo Gallery</h1>
         <p className="p__opensans mt-8 text-center" style={{ color: '#AAAAAA'}}>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.</p>
-        <button type="button" className="custom__button my-10 xl:mt-8">View More</button>
+        <button type="button" className="custom__button my-10 xl:mt-8">了解更多</button>
       </div>
       <div className="app__gallery-images flex-one flex flex-row max-w-[90%] relative xl:max-w-[50%]">
         <div className="app__gallery-images_container flex flex-row w-max overflow-x-scroll" ref={scrollRef}>

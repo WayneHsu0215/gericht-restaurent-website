@@ -22,9 +22,13 @@ import sign from '../assets/sign.png';
 import quote from '../assets/quote.png';
 import gericht from '../assets/gericht.png';
 import logoAAA from '../assets/15.logo.png';
+import home from '../assets/15.home.png';
+import menuAAA from '../assets/15.menu.png';
 
 export default {
   logoAAA,
+  home,
+  menuAAA,
   bg,
   chef,
   G,

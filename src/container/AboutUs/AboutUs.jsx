@@ -11,10 +11,10 @@ const AboutUs = () => (
 
     <div className="w-full z-2 flex__center flex-col lg:flex-row">
       <div className=" flex-one flex justify-end items-end flex-col text-right">
-        <h1 className="headtext__cormorant">About Us</h1>
+        <h1 className="headtext__cormorant">關於我們</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans mx-0 my-6 text-primary-gray">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
-        <button type="button" className="custom__button">Know More</button>
+        <button type="button" className="custom__button">了解更多</button>
       </div>
 
       <div className="my-1 mx-2 lg:my-8 lg:mx-16 lg:rotate-0 rotate-90 flex__center">
@@ -22,10 +22,10 @@ const AboutUs = () => (
       </div> 
 
       <div className=" flex-one flex justify-start items-start flex-col text-left">
-        <h1 className="headtext__cormorant">Our History</h1>
+        <h1 className="headtext__cormorant">我們的歷史</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
         <p className="p__opensans mx-0 my-6 text-primary-gray">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
-        <button type="button" className="custom__button">Know More</button>
+        <button type="button" className="custom__button">了解更多</button>
       </div>
     </div>
   </div>

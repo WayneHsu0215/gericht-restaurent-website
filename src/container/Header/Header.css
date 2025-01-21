@@ -1,0 +1,9 @@
+/* Header.css */
+.text-with-linebreak {
+    white-space: pre-wrap; /* 保证换行符和空格都生效 */
+  }
+
+  /* Header.css */
+.font-KaiTi {
+  font-family: 'KaiTi', sans-serif;
+}
