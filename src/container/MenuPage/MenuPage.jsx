@@ -164,12 +164,12 @@ const MenuPage = () => {
 
   return (
     <div style={{ fontFamily: "Arial, sans-serif", lineHeight: "1.6", backgroundColor: "#0a0a0a", paddingBottom: "50px" }}>
-      <nav style={{ backgroundColor: "#0a0a0a", padding: "10px 0", position: "fixed", top: 0, width: "100%", zIndex: 1000 }}>
+      <nav style={{ backgroundColor: "#0a0a0a", padding: "10px 0", position: "fixed", top: 0, width: "100%", zIndex: 1000, borderBottom: "none" }}>
         {menuSections.map((section) => (
           <button
             key={section.id}
             style={{
-              backgroundColor: "#f4a460",
+              backgroundColor: "#f3c15c", // Soft yellow shade
               border: "none",
               color: "white",
               padding: "10px 20px",
@@ -200,18 +200,38 @@ const MenuPage = () => {
               boxShadow: "0 4px 8px rgba(255, 255, 255, 0.1)",
             }}
           >
-            <h2 style={{ borderBottom: "2px solidrgb(151, 82, 32)", paddingBottom: "10px", color: "#713f12" }}>{section.title}</h2>
+            <h2 style={{ borderBottom: "2px solid rgb(243, 193, 92)", paddingBottom: "10px", color: "#fde68a", fontSize: "1.3em" }}>
+              {section.title}
+            </h2>
             {section.items.map((item, index) => (
-            <div key={index} style={{ display: "flex", justifyContent: "space-between", alignItems: "center", borderBottom: "1px dashedrgb(205, 207, 169)", padding: "10px 0" }}>
-              <span style={{ color: "#fef3c7" }}>{item.name}</span>
-              <div style={{ display: "flex", justifyContent: "left", alignItems: "center", flex: 1 }}>
-                {item.note && (
-                  <span style={{ fontStyle: "italic", color: "white", textAlign: "center" , marginLeft: "16px"}}>{item.note}</span>
-                )}
+              <div
+                key={index}
+                style={{
+                  display: "flex",
+                  justifyContent: "space-between",
+                  alignItems: "center",
+                  padding: "10px 0",
+                }}
+              >
+                <span style={{ color: "#fef3c7" }}>{item.name}</span>
+                <div style={{ display: "flex", justifyContent: "left", alignItems: "center", flex: 1 }}>
+                  {item.note && (
+                    <span
+                      style={{
+                        fontStyle: "italic",
+                        color: "white", 
+                        textAlign: "center",
+                        marginLeft: "16px",
+                        fontSize: "0.8em",
+                      }}
+                    >
+                      {item.note}
+                    </span>
+                  )}
+                </div>
+                <span style={{ color: "white", fontWeight: "bold" }}>${item.price}</span>
               </div>
-              <span style={{ color: "white", fontWeight: "bold" }}>${item.price}</span>
-            </div>
-          ))}
+            ))}
           </div>
         ))}
       </div>
