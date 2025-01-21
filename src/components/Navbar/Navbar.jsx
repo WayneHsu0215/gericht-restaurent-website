@@ -25,47 +25,42 @@ const Navbar = () => {
             className='z-nav fixed w-full flex justify-between items-center text-primary-white bg-transparent backdrop-blur-2xl sm:px-8 sm:py-4 p-4'>
             <div className='flex justify-start items-center'>
                 <img
-                    src={images.gericht}
+                    src={images.logoAAA}
                     alt="app logo"
-                    className="h-auto w-24 sm:w-40 2xl:w-52"/>
+                    className="h-auto w-24 sm:w-20 2xl:w-52"/>
             </div>
             <ul className='lg:flex hidden justify-center items-center flex-1 duration-300 gap-2'>
                 <li
                     className='text-primary-white my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
-                    <a href='#home'>Home</a>
+                    <a href='#home'>首頁</a>
                 </li>
                 <li
                     className='text-primary-white my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
-                    <a href='#about'>About</a>
+                    <a href='#about'>關於我們</a>
                 </li>
                 <li
                     className='text-primary-white my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
-                    <a href='#menu'>Menu</a>
+                    <a href='#menu'>菜單</a>
                 </li>
                 <li
                     className='text-primary-white my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
-                    <a href='#awards'>Awards</a>
-                </li>
-                <li
-                    className='text-primary-white my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
-                    <a href='#contact'>Contact</a>
+                    <a href='#contact'>聯絡我們</a>
                 </li>
             </ul>
 
             {/*=========== Login Button ============*/}
 
             <div className="sm:flex hidden justify-end items-center">
-                <a href='#login' className='my-0 mx-1 no-underline hover:text-primary-gray'>Log In / Register</a>
-                <div className="line"/>
+
                 <a
-                    href="/"
-                    className='my-0 mx-1 no-underline duration-150 hover:text-primary-gray'>Book Table</a>
+                    href="https://shop.ichefpos.com/store/6koqeTEY/ordering"
+                    className='my-0 mx-1 underline no-underline duration-150 hover:text-primary-gray'>點餐連結</a>
             </div>
 
             {/*================ Mobile Navigation ================*/}
 
             <div className="flex lg:hidden">
-                <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => {setToggleMenu(true)}}/> 
+                <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => {setToggleMenu(true)}}/>
                 {/*=========== Mobile Overlay ===========*/}
                 {toggleMenu && (
                     <div
