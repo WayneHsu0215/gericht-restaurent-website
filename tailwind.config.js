@@ -60,6 +60,8 @@ module.exports = {
       fontFamily: {
         CormorantUpright: ['Cormorant Upright', 'sans-serif'],
         Sans: ['sans-serif'],
+        KaiTi: ['標楷體', 'serif'],
+
       },
       // z index
       zIndex: {
