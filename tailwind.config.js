@@ -1,6 +1,9 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [ "./src/**/*.{js,ts,jsx,tsx}", "./src/components/**/*.{js,ts,jsx,tsx}", ],
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./src/components/**/*.{js,ts,jsx,tsx}",
+  ],
   theme: {
     extend: {
       fontSize: {
@@ -34,13 +37,28 @@ module.exports = {
         slideBottom: {
           '0%': { transform: 'translateY(-25%)' },
           '100%': { transform: 'translateY(0%)' },
-        }
+        },
+        fadeIn: {
+          '0%': { opacity: '0' },
+          '100%': { opacity: '1' },
+        },
+        slideInFromLeft: {
+          '0%': { transform: 'translateX(-100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
+        slideInFromRight: {
+          '0%': { transform: 'translateX(100%)', opacity: '0' },
+          '100%': { transform: 'translateX(0)', opacity: '1' },
+        },
       },
       animation: {
         slideBottomAnimation: 'slideBottom 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both',
+        fadeIn: 'fadeIn 1.5s ease-in-out',
+        slideInFromLeft: 'slideInFromLeft 1s ease-out',
+        slideInFromRight: 'slideInFromRight 1s ease-out',
       },
       fontFamily: {
-        CormorantUpright: ['Cormorant Upright', 'sans-serif'], 
+        CormorantUpright: ['Cormorant Upright', 'sans-serif'],
         Sans: ['sans-serif'],
       },
       // z index
@@ -101,7 +119,7 @@ module.exports = {
       screens: {
         'mobile': '450px',
         'big': '2000px',
-      },  
+      },
     },
   },
   plugins: [],
