@@ -17,9 +17,19 @@ const FindUs = () => (
       <button type="button" className="custom__button mt-8">Visit Us</button>
     </div>
 
-    <div className="app__wrapper_img">
-      <img src={images.findus} alt="finus_img" className='md:w-5/6' />
-    </div>
+
+      <div className="app__wrapper_img">
+          <iframe
+src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.6058255681032!2d120.2650439!3d23.797046899999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eaf62e3856ba9%3A0x8cfd236067530a0!2z5ou-5ZC-6Y2L54mp!5e0!3m2!1szh-TW!2stw!4v1737444337464!5m2!1szh-TW!2stw"
+              title="location-map"
+              className="w-full md:w-5/6 h-96 rounded-md"
+              style={{border: 0}}
+              allowFullScreen=""
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+      </div>
+
   </div>
 );
 
