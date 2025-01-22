@@ -4,27 +4,27 @@ const soup = [
   {
     title: '三鮮豚骨',
     price: '$30',
-    tags: 'AU | Meal',
+    tags: 'Sansen Tonkotsu',
   },
   {
     title: '牛奶起司',
     price: '$45',
-    tags: 'AU | Deal',
+    tags: 'Milk cheese',
   },
   {
     title: '半斤蛤蠣',
     price: '$60',
-    tags: 'FR | Deal',
+    tags: 'Half a pound of clams',
   },
   {
     title: '酸菜魚',
     price: '$50',
-    tags: 'CA | Meal',
+    tags: 'Pickled Fish',
   },
   {
     title: '泰式冬蔭功',
     price: '$50',
-    tags: 'IE | Meal',
+    tags: 'Thai Tom Yum Kung',
   },
 ];
 
@@ -32,32 +32,32 @@ const hotpot = [
   {
     title: '五花牛肉鍋',
     price: '$190',
-    tags: 'Free with a meal | Soda | 30 ml',
+    tags: 'Pork belly beef hotpot',
   },
   {
     title: "拾吾雞肉鍋",
     price: '$210',
-    tags: 'Free with a meal | Soda | 30 ml',
+    tags: 'Shiwu Chicken Pot',
   },
   {
     title: '拾吾鯛魚鍋',
     price: '$200',
-    tags: 'Free with a meal | 30 ml',
+    tags: 'Shiwu sea bream hotpot',
   },
   {
     title: '深海草蝦鍋',
     price: '$230',
-    tags: 'Free with a meal | 30 ml',
+    tags: 'Deep sea grass shrimp pot',
   },
   {
     title: '肉肉雙拼\n（4選2）',
     price: '$220',
-    tags: 'Free with a meal | Soda | 30 ml',
+    tags: 'Meat and pork double combo',
   },
   {
     title: '海陸雙拼\n（6選2）',
     price: '$250',
-    tags: 'Free with a meal | Soda | 30 ml',
+    tags: 'Sea and land combination',
   },
 ];
 

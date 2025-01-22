@@ -6,7 +6,7 @@ import { images } from '../../constants';
 const FindUs = () => (
   <div className="app__bg app__wrapper section__padding" id="contact">
     <div className="app__wrapper_info">
-      <SubHeading title="Contact" />
+      <SubHeading title="資訊" />
       <h1 className="headtext__cormorant font-KaiTi" style={{ marginBottom: '3rem' }}>地址</h1>
       <div className="app__wrapper-content">
         <p className="p__opensans font-KaiTi">638雲林縣麥寮鄉仁德西路一段25號</p>

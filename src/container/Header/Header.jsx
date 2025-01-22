@@ -27,7 +27,7 @@ const Header = () => {
             id="home"
         >
             <div className="flex-1 w-full flex items-start justify-center flex-col animate-slideInFromLeft">
-                <SubHeading title="Chase the new flavour" />
+                <SubHeading title="發現美味鍋物" />
                 {/* 使用 CSS 来处理换行 */}
                 <h1 className="headtext__cormorant font-bold mb-4 text-with-linebreak font-KaiTi">
                     {text}

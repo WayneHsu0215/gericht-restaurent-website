@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsFillPlayFill, BsPauseFill } from 'react-icons/bs';
 
-import { meal } from '../../constants';
+import { meat } from '../../constants';
 import './Intro.css';
 
 const Intro = () => {
@@ -12,7 +12,7 @@ const Intro = () => {
     <div className="h-screen relative">
       <video
         ref={vidRef}
-        src={meal}
+        src={meat}
         type="video/mp4"
         loop
         controls={false}

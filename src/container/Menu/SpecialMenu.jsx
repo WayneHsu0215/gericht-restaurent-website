@@ -10,7 +10,7 @@ const SpecialMenu = () => {
   return(
   <div className="flex-col bg-primary-black flex__center section__padding" id="menu">
     <div className="mb-8 m-auto flex flex-col justify-center items-center">
-      <SubHeading title="Menu that fits your palatte"/>
+      <SubHeading title="主廚推薦"/>
       <h1 className="headtext__cormorant">美味鍋物</h1>
     </div>
 
