@@ -32,10 +32,8 @@ const Header = () => {
                 <h1 className="headtext__cormorant font-bold mb-4 text-with-linebreak font-KaiTi">
                     {text}
                 </h1>
-                <p className="p__opensans mb-4 animate-fadeIn delay-500">
-                    Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat
-                    morbi facilisis quam scelerisque sapien. Et, penatibus aliquam amet
-                    tellus.
+                <p className="p__opensans mb-4 animate-fadeIn delay-500 font-KaiTi">
+                    歡迎來到拾吾！這裡有新鮮的食材和獨特的湯底，讓您享受美味的火鍋體驗。<br/>期待與您共度美好時光，品味火鍋的無限魅力！
                 </p>
                 <a href="#menu">
                 <button
