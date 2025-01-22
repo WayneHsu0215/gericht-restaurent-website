@@ -1,9 +1,9 @@
-/* Header.css */
 .text-with-linebreak {
-    white-space: pre-wrap; /* 保证换行符和空格都生效 */
-  }
-
-  /* Header.css */
-.font-KaiTi {
-  font-family: 'KaiTi', sans-serif;
+  white-space: pre-wrap; /* 處理 \n 換行符號 */
+  line-height: 3.5; /* 增大行距，讓兩行文字更分開 */
+  letter-spacing: 0.1em; /* 保持字間距適中 */
+  font-size: 2.5rem; /* 文字大小 */
+  color: #d4af37; /* 金色文字 */
+  text-align: left; /* 文字偏左 */
+  margin: 0; /* 移除多餘的上下空間 */
 }
