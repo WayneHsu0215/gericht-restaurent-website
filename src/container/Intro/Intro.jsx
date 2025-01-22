@@ -20,7 +20,7 @@ const Intro = () => {
   };
 
   useEffect(() => {
-    intervalRef.current = setInterval(changeImage, 3000); // 每3秒切换一次图片
+    intervalRef.current = setInterval(changeImage, 2000); // 每3秒切换一次图片
     
     return () => clearInterval(intervalRef.current); // 清除定时器
   }, []);
