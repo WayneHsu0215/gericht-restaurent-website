@@ -1,4 +1,5 @@
 import React from "react";
+import { Icon } from '@iconify/react';
 
 const MenuPage = () => {
   const menuSections = [
@@ -9,10 +10,10 @@ const MenuPage = () => {
         { name: "昆布湯底", price: "0" },
         { name: "濃郁沙茶", price: "15" },
         { name: "川味麻辣", price: "20" },
-        { name: "三鮮豚骨", price: "30" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "三鮮豚骨", price: "30" },
         { name: "韓式泡菜", price: "35" },
-        { name: "牛奶起司", price: "45" },
-        { name: "半斤蛤蠣", price: "60" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "牛奶起司", price: "45" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "半斤蛤蠣", price: "60" },
       ],
     },
     {
@@ -20,18 +21,18 @@ const MenuPage = () => {
       title: "拾吾秘製湯底",
       items: [
         { name: "濃郁番茄", price: "45" },
-        { name: "酸菜魚", price: "50" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "酸菜魚", price: "50" },
         { name: "金湯", price: "50" },
         { name: "菌菇", price: "50" },
-        { name: "泰式冬蔭功", price: "50" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "泰式冬蔭功", price: "50" },
       ],
     },
     {
       id: "special-dishes",
       title: "拾吾精選鍋物（免選湯底）",
       items: [
-        { name: "酸菜魚（鱸魚 or 鯛魚 2選1）",note:"加購（牛、雞、羊、五花肉）+50", price: "250" },
-        { name: "黃金雞肉鍋", price: "260" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "酸菜魚（鱸魚 or 鯛魚 2選1）",note:"加購（牛、雞、羊、五花肉）+50", price: "250" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "黃金雞肉鍋", price: "260" },
       ],
     },
     {
@@ -41,21 +42,21 @@ const MenuPage = () => {
         { name: "拾吾牛肉鍋", price: "169" },
         { name: "梅花豬肉鍋", price: "169" },
         { name: "拾吾羊肉鍋", price: "180" },
-        { name: "五花牛肉鍋", price: "190" },
-        { name: "拾吾雞肉鍋", price: "210" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "五花牛肉鍋", price: "190" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "拾吾雞肉鍋", price: "210" },
         { name: "松阪豬肉鍋", price: "220" },
-        { name: "拾吾鯛魚鍋", price: "200" },
-        { name: "深海草蝦鍋", price: "230" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "拾吾鯛魚鍋", price: "200" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "深海草蝦鍋", price: "230" },
         { name: "美國板腱牛肉鍋", price: "260" },
-        { name: "肉肉雙拼（4選2）", note: "拾吾牛、梅花豬、羊肉、五花牛 + 10 元", price: "220" },
-        { name: "海陸雙拼（6選2）", note: "五花牛、梅花豬、羊肉、鯛魚、鱸魚、巴沙魚", price: "250" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "肉肉雙拼（4選2）", note: "拾吾牛、梅花豬、羊肉、五花牛 + 10 元", price: "220" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "海陸雙拼（6選2）", note: "五花牛、梅花豬、羊肉、鯛魚、鱸魚、巴沙魚", price: "250" },
         { name: "海鮮拼盤鍋", note: "草蝦x3 + 蛤蜊半斤 + 鯛魚 + 干貝", price: "399" },
         { name: "素食菇菇鍋", price: "160" },
       ],
       items: [
         { name: "火烤兩吃", note: "五花牛/梅花豬/羊肉/松阪豬", price: "260" },
         { name: "火烤雙拼肉盤", note: "五花牛 + 梅花豬", price: "300" },
-        { name: "火烤三種肉一次擁有",  note:"五花牛 + 梅花豬 + 松阪豬", price: "400" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "火烤三種肉一次擁有",  note:"五花牛 + 梅花豬 + 松阪豬", price: "400" },
       ]
     },
     {
@@ -63,9 +64,9 @@ const MenuPage = () => {
       title: "開胃熱食",
       items: [
         { name: "韓式泡菜", price: "40" },
-        { name: "麻辣鴨血", price: "45" },
-        { name: "麻辣豆腐", price: "45" },
-        { name: "麻辣綜合", price: "55" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "麻辣鴨血", price: "45" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "麻辣豆腐", price: "45" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "麻辣綜合", price: "55" },
       ],
     },
     {
@@ -76,12 +77,12 @@ const MenuPage = () => {
         { name: "梅花豬肉", price: "70" },
         { name: "拾吾羊肉", price: "70" },
         { name: "五花牛肉", price: "90" },
-        { name: "去骨雞腿肉", price: "90" },
-        { name: "美國板腱牛肉", price: "160" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "去骨雞腿肉", price: "90" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "美國板腱牛肉", price: "160" },
         { name: "火烤五花牛", price: "160" },
         { name: "火烤梅花豬", price: "110" },
-        { name: "火烤羊肉", price: "120" },
-        { name: "火烤松阪豬", price: "150" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "火烤羊肉", price: "120" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "火烤松阪豬", price: "150" },
       ],
     },
     {
@@ -121,9 +122,9 @@ const MenuPage = () => {
         { name: "爆漿球", note: "鮮蝦、芋泥、綜合", price: "35" },
         { name: "麻吉燒", note: "花生、芝麻、綜合", price: "35" },
         { name: "魚卵捲", price: "35" },
-        { name: "芋頭鮮肉丸", price: "35" },
-        { name: "香酥老油條", price: "35" },
-        { name: "龍蝦沙拉丸", price: "35" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "芋頭鮮肉丸", price: "35" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "香酥老油條", price: "35" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "龍蝦沙拉丸", price: "35" },
       ],
     },
     {
@@ -131,12 +132,12 @@ const MenuPage = () => {
       title: "海鮮單點",
       items: [
         { name: "蛤蜊（半斤）", price: "60" },
-        { name: "手工花枝漿", price: "70" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "手工花枝漿", price: "70" },
         { name: "手工蝦仁漿", price: "70" },
         { name: "白蝦", price: "90" },
-        { name: "草蝦", price: "105" },
-        { name: "鯛魚片", price: "80" },
-        { name: "鱸魚片", price: "90" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "草蝦", price: "105" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "鯛魚片", price: "80" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "鱸魚片", price: "90" },
         { name: "巴沙魚片", price: "80" },
         { name: "海鮮拼盤", note: "草蝦x3 + 蛤蜊半斤 + 鱸魚 + 干貝", price: "300" },
       ],
@@ -147,7 +148,7 @@ const MenuPage = () => {
       items: [
         { name: "雞蛋", price: "15" },
         { name: "烏龍麵", price: "20" },
-        { name: "豬油拌飯", price: "20" },
+        { icon: <Icon icon="icon-park-outline:good-two" width="20" height="20" color="#fbbf24"/>, name: "豬油拌飯", price: "20" },
       ],
     },
     {
@@ -228,13 +229,24 @@ const MenuPage = () => {
                   padding: "10px 0",
                 }}
               >
-                <span style={{ color: "rgb(232, 220, 198)", fontSize: "1.1em" }}>{item.name}</span>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                {item.icon ? (
+                    <div style={{ marginRight: "10px" }}>
+                      {item.icon}
+                    </div>
+                  ) : (
+                    <div style={{ width: "30px" }} />
+                  )}
+                  <span style={{ color: "rgb(232, 220, 198)", fontSize: "1.1em" }}>
+                    {item.name}
+                  </span>
+                </div>
                 <div style={{ display: "flex", justifyContent: "left", alignItems: "center", flex: 1 }}>
                   {item.note && (
                     <span
                       style={{
                         fontStyle: "italic",
-                        color: "white", 
+                        color: "white",
                         textAlign: "center",
                         marginLeft: "32px",
                         fontSize: "0.8em",
