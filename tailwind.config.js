@@ -120,6 +120,7 @@ module.exports = {
 
       screens: {
         'mobile': '450px',
+        'lg': '1024px',
         'big': '2000px',
       },
     },

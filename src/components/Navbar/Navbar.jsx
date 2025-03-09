@@ -50,7 +50,7 @@ const Navbar = () => {
 
             {/*=========== Login Button ============*/}
 
-            <div className="sm:flex hidden justify-end items-center">
+            <div className="lg:flex hidden justify-end items-center">
 
                 <a href="https://shop.ichefpos.com/store/6koqeTEY/ordering" target="_blank" rel="noopener noreferrer">
                     <button type="button" className="custom__button font-KaiTi">點餐連結</button>
