@@ -166,7 +166,7 @@ const MenuPage = () => {
   ];
 
   return (
-    <div style={{ fontFamily: "Arial, sans-serif", lineHeight: "3", backgroundColor: "#0a0a0a", paddingBottom: "50px" }}>
+    <div style={{ fontFamily: "font-KaiTi", lineHeight: "3", backgroundColor: "#0a0a0a", paddingBottom: "50px" }}>
     <nav
       style={{
         backgroundColor: "#0a0a0a",
@@ -176,6 +176,14 @@ const MenuPage = () => {
         width: "100%",
         zIndex: 1000,
         outline: "none",
+        overflowX: "auto", // 允許左右滑動
+        whiteSpace: "nowrap", // 確保不換行
+        display: "flex",
+        gap: "20px",
+        paddingLeft: "20px",
+        paddingRight: "20px",
+        scrollbarWidth: "none", // 隱藏滾動條（適用於 Firefox）
+        WebkitOverflowScrolling: "touch" // 手機滑動流暢
       }}
     >
       {menuSections.map((section) => (
@@ -192,6 +200,7 @@ const MenuPage = () => {
             fontSize: "1.1em", // 可以根据需要调整字体大小
             fontWeight: "bold", // 加粗
             transition: "color 0.3s ease", // 添加颜色变化过渡效果
+            flexShrink: 0 // 防止內容擠壓
           }}
           onMouseEnter={(e) => {
             e.target.style.color = "#f59e0b"; // 悬停时颜色变深

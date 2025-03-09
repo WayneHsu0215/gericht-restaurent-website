@@ -137,6 +137,22 @@
   }
 }
 
+@media screen and (max-width: 1408px) {
+  .menu-container { 
+    display: flex;
+    flex-wrap: nowrap;  /* 禁止換行 */
+    overflow-x: auto;   /* 允許橫向滾動 */
+    white-space: nowrap; /* 避免文字自動換行 */
+    -webkit-overflow-scrolling: touch; /* 讓手機滑動更流暢 */
+  }
+
+  .menu-item {
+    flex: 0 0 auto; /* 保持項目原本的大小 */
+    margin-right: 1rem; /* 每個項目之間的間距 */
+  }
+}
+
+
 @media screen and (max-width: 1150px) {
   .app__wrapper {
     flex-direction: column;
