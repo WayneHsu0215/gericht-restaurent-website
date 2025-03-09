@@ -24,7 +24,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
+  font-family: var(--font-KaiTi);
   min-height: 100vh;
 }
 
@@ -59,7 +59,7 @@
 .custom__button {
   background-color: var(--color-crimson);
     color: var(--color-black);
-    font-family: var(--font-base);
+    font-family: var(--font-KaiTi);
     font-weight: 700;
     letter-spacing: 0.04em;
     line-height: 28px;
@@ -70,14 +70,16 @@
     outline: none;
     cursor: pointer;
     transition: all 0.15s ease-in-out;
+
 }
 .custom__button:hover {
   background-color: var(--color-black);
   color: var(--color-crimson);
+  font-family: var(--font-KaiTi);
 }
 
 .p__cormorant {
-  font-family: var(--font-base);
+  font-family: var(--font-KaiTi);
   color: var(--color-white);
   font-weight: 700;
   letter-spacing: 0.04em;
@@ -88,7 +90,7 @@
 }
 
 .p__opensans {
-  font-family: var(--font-alt);
+  font-family: var(--font-KaiTi);
   color: var(--color-white);
   font-weight: 400;
   letter-spacing: 0.04em;
@@ -98,7 +100,7 @@
 }
 
 .headtext__cormorant {
-  font-family: var(--font-base);
+  font-family: var(--font-KaiTi);
   color: var(--color-golden);
   font-size: 64px;
   line-height: 65px;
@@ -115,16 +117,19 @@
   .p__cormorant {
     font-size: 37px;
     line-height: 67px;
+    font-family: var(--font-KaiTi);
   }
 
   .p__opensans {
     font-size: 30px;
     line-height: 50px;
+    font-family: var(--font-KaiTi);
   }
 
   .headtext__cormorant {
     font-size: 150px;
     line-height: 210px;
+    font-family: var(--font-KaiTi);
   }
 
   .spoon__img {
@@ -153,34 +158,52 @@
 @media screen and (max-width: 850px) {
   .section__padding {
     padding: 4rem;
+    font-family: var(--font-KaiTi);
   }
 }
 
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
+    font-family: var(--font-KaiTi);
   }
   
   .p__cormorant {
     font-size: 21px;
+    font-family: var(--font-KaiTi);
   }
 
   .p__opensans {
     font-size: 14px;
+    font-family: var(--font-KaiTi);
+  }
+
+  .custom__button {
+    font-size: 16px;  
+    padding: 0.5rem 1.5rem; 
+    width: 100%; 
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -10px;
   }
 }
 
 @media screen and (max-width: 450px) {
   .p__opensans {
     font-size: 12px;
+    font-family: var(--font-KaiTi);
   }
 
   .p__cormorant {
     font-size: 19px;
+    font-family: var(--font-KaiTi);
   }
 
   .headtext__cormorant {
     font-size: 45px;
     line-height: 70px;
+    font-family: var(--font-KaiTi);
   }
 }

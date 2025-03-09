@@ -1,7 +1,9 @@
 import React from "react";
 import { Icon } from '@iconify/react';
+import { useNavigate } from 'react-router-dom'; 
 
 const MenuPage = () => {
+  const navigate = useNavigate(); // 用於頁面跳轉
   const menuSections = [
     {
       id: "soup-base",
@@ -261,6 +263,15 @@ const MenuPage = () => {
             ))}
           </div>
         ))}
+      </div>
+      <div className="w-full flex justify-center mt-8 pb-4 font-KaiTi">
+        <button
+          type="button"
+          className="custom__button font-KaiTi px-6 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition"
+          onClick={() => navigate('/#home')}
+        >
+          回到首頁
+        </button>
       </div>
     </div>
   );

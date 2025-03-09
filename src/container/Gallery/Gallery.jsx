@@ -26,12 +26,12 @@ const Gallery = () => {
   ];
 
   return (
-    <div className="app__gallery flex__center flex-col bg-primary-black py-16 px-8 xl:px-24 xl:flex-row">
-      <div className="app__gallery-content flex-one flex justify-center items-center flex-col min-w-[100%] xl:pr-8 sm:min-w-[500px] ">
+    <div className="app__gallery flex__center flex-col bg-primary-black py-16 px-8 xl:px-24 xl:flex-row font-KaiTi">
+      <div className="app__gallery-content flex-one flex justify-center items-center flex-col min-w-[100%] xl:pr-8 sm:min-w-[500px] font-KaiTi">
         <SubHeading title="Instagram" />
-        <h1 className="headtext__cormorant">美食特集</h1>
-        <p className="p__opensans mt-8 text-center" style={{ color: '#AAAAAA'}}>這裡有更多美食等著你們來探索</p>
-        <button type="button" className="custom__button my-10 xl:mt-8">了解更多</button>
+        <h1 className="headtext__cormorant font-KaiTi">美食特集</h1>
+        <p className="p__opensans mt-8 text-center font-KaiTi" style={{ color: '#AAAAAA'}}>這裡有更多美食等著你們來探索</p>
+        <button type="button" className="custom__button my-10 xl:mt-8 font-KaiTi">了解更多</button>
       </div>
       <div className="app__gallery-images flex-one flex flex-row max-w-[90%] relative xl:max-w-[50%]">
         <div className="app__gallery-images_container flex flex-row w-max overflow-x-scroll" ref={scrollRef}>
