@@ -31,7 +31,7 @@ const Gallery = () => {
         <SubHeading title="Instagram" />
         <h1 className="headtext__cormorant font-KaiTi">美食特集</h1>
         <p className="p__opensans mt-8 text-center font-KaiTi" style={{ color: '#AAAAAA'}}>這裡有更多美食等著你們來探索</p>
-        <button type="button" className="custom__button my-10 xl:mt-8 font-KaiTi">了解更多</button>
+        <a href="https://www.instagram.com/ft151515/" target="_blank" rel="noopener noreferrer" className="custom__button my-10 xl:mt-8 font-KaiTi inline-block text-center">了解更多</a>
       </div>
       <div className="app__gallery-images flex-one flex flex-row max-w-[90%] relative xl:max-w-[50%]">
         <div className="app__gallery-images_container flex flex-row w-max overflow-x-scroll" ref={scrollRef}>
