@@ -5,10 +5,6 @@ import './AboutUs.css';
 
 const AboutUs = () => (
   <div className="relative app__bg flex__center section__padding" id="about">
-    <div className="absolute inset-0 flex__center">
-      <img src={images.G} alt="G_overlay" className='z-0 h-1/4 sm:h-2/6 lg:w-96 lg:h-96' />
-    </div>
-
     <div className="w-full z-2 flex__center flex-col lg:flex-row font-KaiTi">
       <div className=" flex-one flex justify-end items-end flex-col text-right font-KaiTi">
         <h1 className="headtext__cormorant font-KaiTi">關於我們</h1>
@@ -18,7 +14,7 @@ const AboutUs = () => (
       </div>
 
       <div className="my-1 mx-2 lg:my-8 lg:mx-16 lg:rotate-0 rotate-90 flex__center">
-        <img src={images.knife} alt="about_knife" className='h-80vwh lg:h-screen 2xl:h-70vh'/>
+        <img src={images.soup} alt="about_soup" className='h-60wh lg:h-80vh 2xl:h-50vh brightness-85'/>
       </div> 
 
       <div className=" flex-one flex justify-start items-start flex-col text-left font-KaiTi">

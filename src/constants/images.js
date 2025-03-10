@@ -1,6 +1,5 @@
 import bg from '../assets/bg.png';
-import G from '../assets/G.png';
-import knife from '../assets/knife.png';
+import soup from '../assets/soup.png';
 import logo from '../assets/logo.png';
 import spoon from '../assets/spoon.svg';
 import laurels from '../assets/laurels.png';
@@ -22,6 +21,7 @@ import picture07 from '../assets/01.png';
 
 
 export default {
+  soup,
   logoAAA,
   home,
   menuAAA,
@@ -37,8 +37,6 @@ export default {
   picture06,
   picture07,
   bg,
-  G,
-  knife,
   logo,
   spoon,
   laurels,
