@@ -37,10 +37,6 @@ const Navbar = () => {
                 </li>
                 <li
                     className='text-primary-white font-KaiTi text-xl  my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
-                    <a href='#about'>關於我們</a>
-                </li>
-                <li
-                    className='text-primary-white font-KaiTi text-xl  my-0 mx-1 duration-150 cursor-pointer hover:text-primary-gray '>
                     <a href='#menu'>菜單</a>
                 </li>
                 <li
@@ -81,15 +77,6 @@ const Navbar = () => {
                                     src={images.spoon}
                                     alt="spoon underline"
                                     className="h-[10px] w-24 mx-auto"/>
-                            </li>
-                            <li
-                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-4xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
-                                <a href='#about'>About</a>
-                                <img
-                                    src={images.spoon}
-                                    alt="spoon underline"
-                                    className="h-[10px] w-24 mx-auto"/>
-
                             </li>
                             <li
                                 className='font-KaiTi m-4 cursor-pointer text-primary-golden text-4xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
