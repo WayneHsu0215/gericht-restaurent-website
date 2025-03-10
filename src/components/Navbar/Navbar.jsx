@@ -27,7 +27,8 @@ const Navbar = () => {
                 <img
                     src={images.logoAAA}
                     alt="app logo"
-                    className="h-auto w-24 sm:w-20 2xl:w-52"/>
+                    className="h-[30px] w-[120px] sm:h-[50px] sm:w-[200px] mr-2"
+                />
             </div>
             <ul className='lg:flex hidden justify-center items-center flex-1 duration-300 mr-24 gap-2 font-KaiTi'>
                 <li
@@ -60,9 +61,7 @@ const Navbar = () => {
             {/*================ Mobile Navigation ================*/}
 
             <div className="flex lg:hidden">
-            <a href="https://shop.ichefpos.com/store/6koqeTEY/ordering" target="_blank" rel="noopener noreferrer" className="mx-auto mt-4">
-                <button type="button" className="custom__button font-KaiTi w-40 py-2 text-xl">點餐連結</button>
-            </a>
+
                 <GiHamburgerMenu color='#fff' fontSize={27} onClick={() => {setToggleMenu(true)}}/>
                 {/*=========== Mobile Overlay ===========*/}
                 {toggleMenu && (
