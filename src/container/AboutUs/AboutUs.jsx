@@ -13,7 +13,7 @@ const AboutUs = () => (
         
       </div>
 
-      <div className="my-1 mx-2 lg:my-8 lg:mx-16 lg:rotate-0 rotate-90 flex__center">
+      <div className="my-1 mx-2 lg:my-8 lg:mx-16 lg:rotate-0 flex__center">
         <img src={images.soup} alt="about_soup" className='h-60wh lg:h-80vh 2xl:h-50vh brightness-85'/>
       </div> 
 
