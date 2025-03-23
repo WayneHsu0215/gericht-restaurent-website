@@ -9,17 +9,18 @@ const Header = () => {
 
 
     useEffect(() => {
-        let currentIndex = 0;
-        const interval = setInterval(() => {
-            if (currentIndex < fullText.length) {
-                setText((prev) => prev + fullText[currentIndex]);
-                currentIndex += 1;
-            } else {
-                clearInterval(interval);
-            }
-        }, 100);
+        const startTime = performance.now();
 
-        return () => clearInterval(interval);
+        const animateText = () => {
+            const currentIndex = Math.min(Math.floor((performance.now() - startTime) / 100), fullText.length);
+            setText(fullText.slice(0, currentIndex));
+
+            if (currentIndex < fullText.length) {
+                requestAnimationFrame(animateText); // Continue animating
+            }
+        };
+
+        requestAnimationFrame(animateText);
     }, []);
 
     return (
