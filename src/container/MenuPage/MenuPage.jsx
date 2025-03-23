@@ -278,7 +278,7 @@ const MenuPage = () => {
         type="button"
         className="custom__button font-KaiTi px-6 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition"
         onClick={() => {
-          window.location.href = "http://localhost:3000/#home";
+          window.location.href = "/#home";
           setTimeout(() => {
             window.scrollTo(0, 0);
           }, 100); // 延遲執行，確保跳轉完成
