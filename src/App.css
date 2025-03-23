@@ -13,7 +13,8 @@
 }
 
 .app__bg {
-  background: url('./assets/bg.png');
+  background-color: rgb(12, 12, 12);
+  background-image: url('./assets/bg.optimized.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: repeat;
