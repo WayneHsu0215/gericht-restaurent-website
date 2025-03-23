@@ -9,7 +9,11 @@ const AboutUs = () => (
       <div className=" flex-one flex justify-end items-end flex-col text-right font-KaiTi">
         <h1 className="headtext__cormorant font-KaiTi">關於我們</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans mx-0 my-6 text-primary-gray font-KaiTi">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec aliquet eu proin mauris et.</p>
+        <p className="p__opensans mx-0 my-6 text-primary-gray font-KaiTi">   在雲林這片純樸土地上，拾伍鍋物秉持著「用心熬湯、認真待客」的初心誕生。我們相信，一鍋好湯，不僅是味覺的饗宴，更是人與人之間的溫度傳遞。從湯底的每一個細節、食材的新鮮挑選，到環境的舒適氛圍，我們堅持只給顧客最真誠的體驗。
+
+          拾伍，象徵「食我」，也代表我們對「十五道關卡」精選食材的用心。我們不是追求華麗的擺盤，而是希望每一位來到這裡的顧客，都能「好好吃一頓飯，好好過一天」。
+
+        </p>
         
       </div>
 
@@ -20,7 +24,11 @@ const AboutUs = () => (
       <div className=" flex-one flex justify-start items-start flex-col text-left font-KaiTi">
         <h1 className="headtext__cormorant font-KaiTi">我們的歷史</h1>
         <img src={images.spoon} alt="about_spoon" className="spoon__img" />
-        <p className="p__opensans mx-0 my-6 text-primary-gray font-KaiTi">Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed odio nec aliquet.</p>
+        <p className="p__opensans mx-0 my-6 text-primary-gray font-KaiTi">創立於2022年冬天，拾伍鍋物從一間簡單的小店開始，初衷只是想煮一鍋自己喜歡的湯。那年特別冷，老闆親手熬了一鍋牛骨高湯招待朋友，意外地獲得大好評，於是開店的想法慢慢萌芽。
+
+          我們走過原物料上漲的挑戰，也曾在夏天淡季苦撐營運，但靠著社區居民的支持與口耳相傳，拾伍鍋物慢慢在麥寮鄉三盛村站穩了腳步。
+
+          至今，我們依然每日清晨熬湯、不用湯粉，延續創立初衷，也期待將這份「鍋中的溫暖」帶給更多人。</p>
         
       </div>
     </div>

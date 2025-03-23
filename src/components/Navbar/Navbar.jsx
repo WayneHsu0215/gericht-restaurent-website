@@ -75,16 +75,16 @@ const Navbar = () => {
                         {/*=========== Nav ===========*/}
                         <ul className='list-none mt-4 p-6'>
                             <li
-                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-4xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
-                                <a href='#home'>Home</a>
+                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-2xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
+                                <a href='#home'>首頁</a>
                                     <img
                                     src={images.spoon}
                                     alt="spoon underline"
                                     className="h-[10px] w-24 mx-auto"/>
                             </li>
                             <li
-                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-4xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
-                                <a href='#about'>About</a>
+                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-2xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
+                                <a href='#about'>關於我們</a>
                                 <img
                                     src={images.spoon}
                                     alt="spoon underline"
@@ -92,8 +92,8 @@ const Navbar = () => {
 
                             </li>
                             <li
-                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-4xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
-                                <a href='#menu'>Menu</a>
+                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-2xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
+                                <a href='#menu'>菜單</a>
                                 <img
                                     src={images.spoon}
                                     alt="spoon underline"
@@ -101,8 +101,8 @@ const Navbar = () => {
 
                             </li>
                             <li
-                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-4xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
-                                <a href='#contact'>Contant</a>
+                                className='font-KaiTi m-4 cursor-pointer text-primary-golden text-2xl text-center hover:text-primary-white' onClick={() => {setToggleMenu(false)}}>
+                                <a href='#contact'>聯絡我們</a>
                                 <img
                                     src={images.spoon}
                                     alt="spoon underline"
