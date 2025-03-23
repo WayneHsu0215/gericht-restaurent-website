@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'; // 引入 Router、Routes 和 Route
-import { AboutUs, Chef, FindUs, Footer, Gallery, Header, Intro, Laurels, SpecialMenu } from './container';
+import { AboutUs, FindUs, Footer, Gallery, Header, Laurels, SpecialMenu } from './container';
 import { Navbar } from './components';
 import MenuPage from './container/MenuPage/MenuPage';
 import './App.css';
