@@ -1,8 +1,8 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom'; 
 
-import { SubHeading, MenuItem } from '../../components';
-import { data, images } from '../../constants';
+import { SubHeading, MenuItem } from '@/components';
+import { data, images } from '@/constants';
 import './SpecialMenu.css';
 
 const SpecialMenu = () => {
