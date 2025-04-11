@@ -41,6 +41,7 @@ const Header = () => {
                 <button
                     type="button"
                     className="custom__button animate-fadeIn delay-700 font-KaiTi"
+                    style={{ fontSize: "20px" }}
                 >
                     探索菜單
                 </button>

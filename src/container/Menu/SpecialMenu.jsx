@@ -37,8 +37,7 @@ const SpecialMenu = () => {
         </div>
       </div>
     </div>
-
-    <div className="mt-4 font-KaiTi">
+    <div className="font-KaiTi mt-[-100px]">
         <button
           type="button"
           className="custom__button font-KaiTi"

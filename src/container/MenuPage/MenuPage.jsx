@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useState, useEffect } from 'react';
 import { Icon } from '@iconify/react';
 import { useNavigate } from 'react-router-dom'; 
 
 const MenuPage = () => {
+  const [showButton, setShowButton] = useState(false);
+    let timeoutId = null; // 用來存儲 setTimeout
+  
+    useEffect(() => {
+      const handleScroll = () => {
+        setShowButton(true); // 滾動時顯示按鈕
+  
+        // 清除之前的定時器，防止多次執行
+        if (timeoutId) {
+          clearTimeout(timeoutId);
+        }
+  
+        // 設置 0.5 秒後隱藏按鈕
+        timeoutId = setTimeout(() => {
+          setShowButton(false);
+        }, 700);
+      };
+  
+      window.addEventListener("scroll", handleScroll);
+  
+      return () => {
+        window.removeEventListener("scroll", handleScroll);
+        clearTimeout(timeoutId); // 清除定時器，避免內存洩漏
+      };
+    }, []);
   const navigate = useNavigate(); // 用於頁面跳轉
   const menuSections = [
     {
@@ -186,6 +211,7 @@ const MenuPage = () => {
         WebkitOverflowScrolling: "touch" // 手機滑動流暢
       }}
     >
+      
       {menuSections.map((section) => (
         <span
           key={section.id}
@@ -194,7 +220,7 @@ const MenuPage = () => {
           }}
           style={{
             color: "#fde68a", // 淡黄色的文字颜色
-            padding: "10px 20px",
+            padding: "10px 1px",
             margin: "0 5px",
             cursor: "pointer", // 让鼠标指针变成手形
             fontSize: "1.1em", // 可以根据需要调整字体大小
@@ -210,9 +236,26 @@ const MenuPage = () => {
           }}
         >
           {section.title}
+          
         </span>
       ))}
+     <div className="w-full flex justify-end pb-4 font-KaiTi">
+      <button
+        type="button"
+        className="custom__button font-KaiTi px-6 py-2  rounded-md  transition"
+        onClick={() => {
+          window.location.href = "/#home";
+          setTimeout(() => {
+            window.scrollTo(0, 0);
+          }, 100); // 延遲執行，確保跳轉完成
+        }}
+        style={{marginTop: "10px", }}
+      >
+        回到首頁
+        </button>
+      </div>
     </nav>
+    
       <div style={{ paddingTop: "60px" }}>
         {menuSections.map((section) => (
           <div
@@ -276,7 +319,7 @@ const MenuPage = () => {
       <div className="w-full flex justify-center mt-8 pb-4 font-KaiTi">
       <button
         type="button"
-        className="custom__button font-KaiTi px-6 py-2 bg-gray-200 rounded-md hover:bg-gray-300 transition"
+        className="custom__button font-KaiTi px-6 py-2  rounded-md  transition"
         onClick={() => {
           window.location.href = "/#home";
           setTimeout(() => {
@@ -286,6 +329,16 @@ const MenuPage = () => {
       >
         回到首頁
       </button>
+      {/* 回到頂部按鈕 */}
+      {showButton && (
+          <button
+            type = 'button'
+            className="custom__button font-KaiTi py-2 text-xl fixed bottom-5 right-5"
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+          >
+            回到頂部
+          </button>
+      )}
       </div>
     </div>
   );

@@ -17,8 +17,9 @@
   background-image: url('./assets/bg.optimized.jpg');
   background-position: center;
   background-size: cover;
-  background-repeat: repeat;
-  background-attachment: fixed;
+  background-repeat: no-repeat;
+  -webkit-background-attachment: fixed; /* 添加 Safari 前缀 */
+  background-attachment: fixed; /* 保留标准属性 */
 }
 
 .app__wrapper {
@@ -57,6 +58,7 @@
   width: 80%;
 }
 
+
 .custom__button {
   background-color: var(--color-crimson);
     color: var(--color-black);
@@ -64,7 +66,7 @@
     font-weight: 700;
     letter-spacing: 0.04em;
     line-height: 28px;
-    font-size: 16px;
+    font-size: 20px;
     padding: 0.5rem 1.5rem;
     border-radius: 1px;
     border: 1px solid var(--color-crimson);
@@ -103,7 +105,7 @@
 .headtext__cormorant {
   font-family: var(--font-KaiTi);
   color: var(--color-golden);
-  font-size: 64px;
+  font-size: 54px;
   line-height: 65px;
   letter-spacing: 0.04em;
   text-transform: capitalize;
@@ -179,6 +181,7 @@
   }
 }
 
+
 @media screen and (max-width: 650px) {
   .section__padding {
     padding: 4rem 2rem;
@@ -196,14 +199,21 @@
   }
 
   .custom__button {
-    font-size: 16px;  
-    padding: 0.5rem 1.5rem; 
+    font-family: var(--font-KaiTi) !important;
+    font-size: 20px;  
+    padding: 0.5rem 1rem; 
     width: 100%; 
-    max-width: 200px;
-    display: flex;
+    max-width: 180px;
+    display: block;
     justify-content: center;
     align-items: center;
+    margin-top: 20px; /* 按钮的顶部间距 */
   }
+  
+  .font-KaiTi {
+    margin-top: 10px; /* 调整顶部间距 */
+  }
+
 }
 
 @media screen and (max-width: 450px) {

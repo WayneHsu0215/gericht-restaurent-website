@@ -7,13 +7,13 @@ const FindUs = () => (
   <div className="app__bg app__wrapper section__padding" id="contact">
     <div className="app__wrapper_info font-KaiTi">
       <SubHeading title="資訊" />
-      <h1 className="headtext__cormorant font-KaiTi" style={{ marginBottom: '3rem' }}>地址</h1>
+      <h1 className="headtext__cormorant font-KaiTi" style={{ marginBottom: '2rem' }}>地址</h1>
       <div className="app__wrapper-content">
         <p className="p__opensans font-KaiTi">638雲林縣麥寮鄉仁德西路一段25號</p>
         <p className="p__cormorant font-KaiTi" style={{ color: '#DCCA87', margin: '2rem 0' }}>開店時間</p>
         <p className="text-white font-KaiTi">星期二-星期日</p>
-        <p className="p__opensans font-KaiTi">11:00 am - 14:00 pm</p>
-        <p className="p__opensans font-KaiTi">16:00 pm - 21:00 pm</p>
+        <p className="p__opensans font-KaiTi">11:00 AM - 14:00 PM</p>
+        <p className="p__opensans font-KaiTi">16:00 PM - 21:00 PM</p>
       </div>
       <a href="https://www.google.com/maps?ll=23.797047,120.265044&z=16&t=m&hl=zh-TW&gl=TW&mapclient=embed&cid=634957201960939680" target="_blank" rel="noopener noreferrer">
       <button type="button" className="custom__button mt-8 font-KaiTi">打開地圖</button>

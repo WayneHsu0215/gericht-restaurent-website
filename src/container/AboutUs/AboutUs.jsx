@@ -1,9 +1,35 @@
-import React from 'react';
+import React, { useState, useEffect} from 'react';
 
 import { images } from '@/constants';
 import './AboutUs.css';
 
-const AboutUs = () => (
+const AboutUs = () => {
+  const [showButton, setShowButton] = useState(false);
+        let timeoutId = null; // 用來存儲 setTimeout
+      
+        useEffect(() => {
+          const handleScroll = () => {
+            setShowButton(true); // 滾動時顯示按鈕
+      
+            // 清除之前的定時器，防止多次執行
+            if (timeoutId) {
+              clearTimeout(timeoutId);
+            }
+      
+            // 設置 0.5 秒後隱藏按鈕
+            timeoutId = setTimeout(() => {
+              setShowButton(false);
+            }, 700);
+          };
+      
+          window.addEventListener("scroll", handleScroll);
+      
+          return () => {
+            window.removeEventListener("scroll", handleScroll);
+            clearTimeout(timeoutId); // 清除定時器，避免內存洩漏
+          };
+        }, []);
+  return(
   <div className="relative app__bg flex__center section__padding" id="about">
     <div className="w-full z-2 flex__center flex-col lg:flex-row font-KaiTi">
       <div className=" flex-one flex justify-end items-end flex-col text-right font-KaiTi">
@@ -31,8 +57,19 @@ const AboutUs = () => (
           至今，我們依然每日清晨熬湯、不用湯粉，延續創立初衷，也期待將這份「鍋中的溫暖」帶給更多人。</p>
         
       </div>
-    </div>
+      {/* 回到頂部按鈕 */}
+      {showButton && (
+        <button
+          type = 'button'
+          className="custom__button font-KaiTi w-30 py-2 text-xl fixed bottom-5 right-5 z-50"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          回到頂部
+        </button>
+      )}
+      </div>
   </div>
 );
+};
 
 export default AboutUs;
